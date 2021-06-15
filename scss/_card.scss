@@ -1,0 +1,33 @@
+.card {
+    border-radius: 8px;
+    overflow: hidden;
+
+    &--white {
+        background: hsl(0, 0%, 100%);
+    }
+
+    &--steel {
+        background: hsl(217, 19%, 35%);
+    }
+
+    &--dark {
+        background: hsl(219, 29%, 14%);
+    }
+
+    &--purple {
+        background: hsl(263, 55%, 52%);
+    }
+
+    &--shadow {
+        box-shadow: 0px 0px 12px rgba(0,0,0,025);
+    }
+
+    &:first-child,
+    &:nth-child(5) {
+        grid-column: span 2;
+    }
+
+    &:nth-child(3) {
+        grid-row: span 2;
+    }
+}

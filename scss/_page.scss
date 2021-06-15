@@ -1,0 +1,17 @@
+.page {
+    height: inherit;
+    margin: 0;
+    background: #edf2f8;
+    font-size: 13px;
+    display: grid;
+    place-items: center;
+
+   .main {
+        display: grid;
+        grid-gap: 20px;
+        grid-template:  250px 250px / repeat(4, 250px);
+   }
+    
+
+
+}
