@@ -16,6 +16,14 @@
 
     &--purple {
         background: hsl(263, 55%, 52%);
+
+        .card__quote {
+            color: rgba(255,255,255,0.75);
+        }
+
+        .card__copy {
+            color: rgba(255,255,255,0.5);
+        }
     }
 
     &--shadow {

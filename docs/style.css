@@ -3,8 +3,17 @@ html, body {
   height: 100vh;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+.card__quote {
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 .page {
@@ -14,6 +23,7 @@ body {
   font-size: 13px;
   display: grid;
   place-items: center;
+  outline: 1px solid red;
 }
 .page .main {
   display: grid;
@@ -37,6 +47,12 @@ body {
 .card--purple {
   background: #7541c8;
 }
+.card--purple .card__quote {
+  color: rgba(255, 255, 255, 0.75);
+}
+.card--purple .card__copy {
+  color: rgba(255, 255, 255, 0.5);
+}
 .card--shadow {
   box-shadow: 0px 0px 12px black;
 }
@@ -45,4 +61,8 @@ body {
 }
 .card:nth-child(3) {
   grid-row: span 2;
+}
+
+.profile__avatar {
+  border-radius: 50%;
 }
