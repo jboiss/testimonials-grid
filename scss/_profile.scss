@@ -1,13 +1,25 @@
 .profile {
+    display: grid;
+    grid-template-rows: 25px 25px;
+    grid-template-columns: 50px 1fr;
+    height: 50px;
+
     &__avatar {
         border-radius: 50%;
+        border: 2px solid rgba(255,255,255,0.5);
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        vertical-align: middle;
+        grid-row: 1/2;
     }
 
     &__name {
-
+        display: inline-block;
     }
 
     &__title {
-
+        display: inline-block;
+        grid-column: 2;
     }
 }

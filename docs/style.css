@@ -14,6 +14,7 @@ body {
 .card__quote {
   font-size: 1.2rem;
   font-weight: bold;
+  margin: 0;
 }
 
 .page {
@@ -34,6 +35,7 @@ body {
 .card {
   border-radius: 8px;
   overflow: hidden;
+  padding: 50px;
 }
 .card--white {
   background: white;
@@ -63,6 +65,25 @@ body {
   grid-row: span 2;
 }
 
+.profile {
+  display: grid;
+  grid-template-rows: 25px 25px;
+  grid-template-columns: 50px 1fr;
+  height: 50px;
+}
 .profile__avatar {
   border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  vertical-align: middle;
+  grid-row: 1/2;
+}
+.profile__name {
+  display: inline-block;
+}
+.profile__title {
+  display: inline-block;
+  grid-column: 2;
 }
